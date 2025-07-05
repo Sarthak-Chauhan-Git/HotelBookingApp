@@ -9,7 +9,7 @@ const {
 } = require("../middleware.js");
 const listingController = require("../controller/listing.js");
 const multer = require("multer");
-const { storage } = require("../cloudConfig.JS");
+const { storage, cloudinary } = require("../cloudConfig.js");
 const upload = multer({ storage });
 
 // Index route
