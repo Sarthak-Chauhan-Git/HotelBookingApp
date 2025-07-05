@@ -1,0 +1,219 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222222 !important;
+}
+.search-btn{
+  background-color: #fe424d;
+  color: white;
+  border-radius: 25px;
+  padding: 0rem 1rem;
+}
+.search-btn i{
+  display: inline;
+  margin-right: 0.5rem;
+}
+.search-btn:hover{
+  background-color: #fe424d;
+  color: white;
+}
+.search-inp{
+  border-radius: 25px;
+  padding: 0.5rem 3rem;
+  opacity: 0.7;
+}
+.search-inp:hover{
+  opacity: 1;
+}
+
+.dropdown select{
+  margin-right: 0.5rem;
+  border-radius: 25px;
+}
+.dropdown label{
+  border-radius: 25px;
+}
+
+/* filters bar */
+.filter-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+  #filters {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    padding-right: 0.3rem;
+    opacity: 0.7;
+    border: 1px solid white;
+  }
+  .filter:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+  }
+  .filter p {
+    font-size: 0.8rem;
+  }
+  .tax-info{
+    display: none;
+    color: green;
+  }
+  .tax-toggle{
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 0rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ /* ===== MOBILE SLIDEBAR SETUP ===== */
+.filters-scroller {
+  position: relative;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 1rem;
+  width: 80%;
+  display: inline-flex;
+}
+
+/* Allow horizontal scroll on small screens */
+@media (max-width: 1400px) {
+  #filters {
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #filters::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .filter {
+    flex: 0 0 auto; /* Don't shrink or grow */
+    margin-right: 1rem;
+    min-width: 80px; /* Adjust as needed */
+  }
+}
+
+
+/* Footer */
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-socials i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+/* cards */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0;
+}
+.card-text p {
+  font-weight: 400;
+}
+.listing-link {
+  text-decoration: none;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+/* New */
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Edit */
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* Show */
+.card-img {
+  height: 30vh;
+}
+.btns {
+  display: flex;
+}
+.dlt-btn {
+  background-color: #fe424d !important;
+  border: 1px solid #fe424d !important;
+}
+.tax-rate{
+  color: green;
+}
+/* map */
+#map {
+  width: 80vh;
+  height: 400px;
+}
